@@ -5,7 +5,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    font-size: 40px;
 }
 .turn-Highlight{
     color: white;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

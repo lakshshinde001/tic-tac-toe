@@ -8,7 +8,7 @@ import isWinner from '../../helper/checkWinner.js';
 function Grid({ numberOfCards}){
     const [board, setBoard] = useState(Array(numberOfCards).fill(""));
     const [turn, setTurn] = useState(true); //True is 0, False is X
-    const {winner, setWinner} = useState(null);
+    const [winner, setWinner] = useState(null);
     function play(index){
         if(turn == true){
             board[index] = 'O';
@@ -36,7 +36,7 @@ function Grid({ numberOfCards}){
             {
                 winner && (
                     <>
-                        <h1 className="turn-highlight"> Winner is {winner}</h1>
+                        <h1 className="turn-Highlight"> Winner is {winner}</h1>
                         <button className="reset" onClick={reset}>Reset Game</button>
                     </>
                 )
